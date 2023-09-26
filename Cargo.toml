@@ -1,0 +1,17 @@
+[package]
+name = "stm32_blink"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cortex-m-rt = "0.7.3"
+panic-halt = "0.2.0"
+stm32f4xx-hal = { version = "0.17.1", features = ["stm32f401"] }
+
+[profile.dev]
+lto = true
+opt-level = 's'
+
+[profile.release]
+lto = true
+opt-level = 's'
