@@ -19,8 +19,8 @@ fn main() -> ! {
     // infinite loop
     loop {
         pin.set_high();
-        delay.delay_ms(1000_u16);
+        delay.delay_ms(1000_u32);
         pin.set_low();
-        delay.delay_ms(1000_u16);
+        delay.delay_ms(1000_u32);
     }
 }
